@@ -1,0 +1,16 @@
+python=3.6,Win10
+更新了最新的代码，今天早上还能用，下午就不能用了,尝试了多次都不行。
+Traceback (most recent call last):
+  File "E:/Code/bili2.0-master/run.py", line 177, in <module>
+    loop.run_until_complete(asyncio.wait(tasks + other_tasks))
+  File "D:\ProgramData\Anaconda3\lib\asyncio\base_events.py", line 566, in run_until_complete
+    self.run_forever()
+  File "D:\ProgramData\Anaconda3\lib\asyncio\base_events.py", line 534, in run_forever
+    self._run_once()
+  File "D:\ProgramData\Anaconda3\lib\asyncio\base_events.py", line 1735, in _run_once
+    event_list = self._selector.select(timeout)
+  File "D:\ProgramData\Anaconda3\lib\selectors.py", line 323, in select
+    r, w, _ = self._select(self._readers, self._writers, [], timeout)
+  File "D:\ProgramData\Anaconda3\lib\selectors.py", line 314, in _select
+    r, w, x = select.select(r, w, w, timeout)
+OSError: [WinError 10038] 在一个非套接字上尝试了一个操作。
